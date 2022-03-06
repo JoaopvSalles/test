@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+
+body {
+    height: 100vh;
+}
+
+section {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+div.card {
+    font-size: 50px;
+    color: blueviolet;
+    background-color: green;
+    width: 250px;
+    height: 250px;
+}
+
+div.projects {
+    font-size: 50px;
+    color: blueviolet;
+    background-color: blue;
+    width: 250px;
+    height: 250px;
+}
+
+div.posts {
+    font-size: 50px;
+    color: blueviolet;
+    background-color: lightblue;
+    width: 250px;
+    height: 250px;
+}
