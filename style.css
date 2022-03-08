@@ -13,43 +13,73 @@
     --bg-techs: #CB92B1;
   }
 
+
+/* body */
 body {
     background-color: var(--body-bg-color);
     height: 100vh;
     
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "cards jobs"
+        "footer";
 
+    grid-template-rows: 1fr 32px;
+    grid-template-columns: 30% 70%;
 }
-/*
-section {
-    
+
+
+/* cards */
+section.cards {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 8vh;
 }
-*/
+
 div.card {
     color: var(--text-color);
     background-color: var(--bg-cards);
 
-    width: 348px;
-    height: 250px;
+    width: 25vw;
+    height: auto;
 
-    border-radius: 20px;
+    margin-bottom: 3%;
+    padding: 1%;
+    border-radius: 8px;
 }
 
-div.projects {
-    color: var(--text-color);
-    background-color: var(--bg-cards);
-    width: 952px;
-    height: 100px;
 
-    border-radius: 20px;
+
+
+/* jobs */
+section.jobs {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 8vh;
 }
 
-div.posts {
+div.job {
     color: var(--text-color);
     background-color: var(--bg-cards);
-    width: 952px;
-    height: 100px;
+    width: 65vw;
+    height: auto;
 
-    border-radius: 20px;
+    margin-bottom: 3%;
+    padding: 1%;
+    border-radius: 8px;
+}
+
+
+/* footer */
+footer {
+    width: 100vw;
+    text-align: center;
+
+    color: var(--text-color);
 }
