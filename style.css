@@ -14,7 +14,7 @@
   }
 
 
-/* body */
+/* ========== body ========== */
 body {
     background-color: var(--body-bg-color);
     height: 100vh;
@@ -25,58 +25,143 @@ body {
         "footer";
 
     grid-template-rows: 1fr 32px;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 35% 65%;
 }
 
 
-/* cards */
+/* ========== cards ========== */
 section.cards {
     display: flex;
     flex-direction: column;
 
     align-items: center;
 
-    margin-top: 8vh;
+    margin-top: 4vh;
 }
 
 div.card {
     color: var(--text-color);
+    font-family: "Merriweather Sans";
+
     background-color: var(--bg-cards);
 
-    width: 25vw;
+    width: 20vw;
     height: auto;
 
     margin-bottom: 3%;
-    padding: 1%;
+    padding: 2%;
     border-radius: 8px;
+}
+
+
+/* nth 1 */
+div.card:nth-child(1) img {
+    border: 2px solid #00FF00;
+    border-radius: 50%;
+
+    display: block;
+    margin: 12px auto;
+    width: 20%;
+}
+
+div.card:nth-child(1) h1 {
+    text-align: center;
+    margin: 4px 0;
+}
+
+div.card:nth-child(1) p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+/* nth 2 */
+div.card:nth-child(2) p {
+    font-size: 12px;
+}
+
+
+/* nth 3 */
+div.card:nth-child(3) h2 {
+    margin: 8px 0 8px 8px;
+}
+
+div.card:nth-child(3) p {
+    color: #000000;
+    background-color: var(--bg-techs);
+
+    font-size: 16px;
+    text-align: center;
+    padding: 4px;
+
+    border-radius: 20px;
+    width: fit-content;
+}
+
+
+/* nth 4 */
+div.card:nth-child(4) h2 {
+    margin: 8px 0 0 8px;
+}
+
+div.card:nth-child(4) li {
+    margin: 8px 0 0 28px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+div.card:nth-child(4) p {
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+
+/* nth 5 */
+div.card:nth-child(5) h2 {
+    margin: 8px 0 0 8px;
+}
+
+div.card:nth-child(5) li {
+    margin: 8px 0 0 28px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+div.card:nth-child(5) p {
+    margin-left: 50px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 
 
 
-/* jobs */
+/* ========== jobs ========== */
 section.jobs {
     display: flex;
     flex-direction: column;
 
     align-items: center;
 
-    margin-top: 8vh;
+    margin-top: 4vh;
 }
 
 div.job {
     color: var(--text-color);
+    font-family: "Merriweather Sans";
+
     background-color: var(--bg-cards);
-    width: 65vw;
+    width: 50vw;
     height: auto;
 
     margin-bottom: 3%;
-    padding: 1%;
+    padding: 2%;
     border-radius: 8px;
 }
 
 
-/* footer */
+/* ========== footer ========== */
 footer {
     width: 100vw;
     text-align: center;
