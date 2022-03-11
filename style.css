@@ -77,8 +77,15 @@ div.card:nth-child(1) p {
 
 
 /* nth 2 */
-div.card:nth-child(2) p {
+div.card:nth-child(2) nav {
+    display: table;
+    
     font-size: 12px;
+}
+
+div.card:nth-child(2) a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 
